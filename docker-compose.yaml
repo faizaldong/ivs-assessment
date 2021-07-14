@@ -25,6 +25,11 @@ services:
   #   ports:
   #     - "3000:3000"
   #   environment:
+  #     MYSQL_HOST: mysqldb
+  #     MYSQL_DATABASE: ivs
+  #     MYSQL_USER: root
+  #     MYSQL_PASSWORD: ivs123
+  #     MYSQL_ROOT_PASSWORD: ivs123
   #     NODE_ENV: development
   #     PORT: 3000
   #   links:
