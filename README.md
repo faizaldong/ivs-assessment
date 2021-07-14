@@ -1,7 +1,3 @@
-
-
-https://user-images.githubusercontent.com/17352624/125591332-dfc9066e-62e8-427c-968e-97479b3e3de4.mp4
-
 # IVS- Technical Assessment
 
 This project was generated with [Express](https://expressjs.com/) and use database Mysql in Docker container
@@ -20,3 +16,4 @@ This project was generated with [Express](https://expressjs.com/) and use databa
 [faizal](https://www.linkedin.com/in/faizal-kamaruddin-170576104/) `faizal.itech92@gmail.com`
 
 
+https://user-images.githubusercontent.com/17352624/125591332-dfc9066e-62e8-427c-968e-97479b3e3de4.mp4
