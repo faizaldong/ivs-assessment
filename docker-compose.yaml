@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_HOST: localhost
       MYSQL_DATABASE: ivs
-      MYSQL_USER: root
+      # MYSQL_USER: root
       MYSQL_PASSWORD: ivs123
       MYSQL_ROOT_PASSWORD: ivs123
     ports:
