@@ -1,0 +1,142 @@
+body {
+    padding: 2px;
+    background-color: #e2e2e2;
+}
+
+.box-wrapper {
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+.box-wrapper .wrapper {
+    height: 200px;
+    text-align: left;
+    padding: 1em;
+    width: 350px;
+    background: #f1f1f1;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 3px -1px;
+    position: absolute;
+}
+.box-wrapper .wrapper#signup-wrapper {
+    right: -800px;
+}
+
+.box-wrapper .wrapper.fade-center-to-left {
+    position: relative;
+    animation: fade-center-to-left 1s;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-center-to-left {
+    0%   {left: 0px; top: 0px;}
+    100% {left: -800px; top: 0px;}
+}
+
+.box-wrapper .wrapper.fade-left-to-center {
+    position: relative;
+    animation: fade-left-to-center 1s;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-left-to-center {
+    0% {left: -800px; top: 0px;}
+    100%   {left: 0px; top: 0px;}
+}
+
+.box-wrapper .wrapper.fade-right-to-center {
+    position: relative;
+    animation: fade-right-to-center 1s;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-right-to-center {
+    0%   {right: -800px; top: 0px;}
+    100% {right: 0px; top: 0px;}
+}
+
+.box-wrapper .wrapper.fade-center-to-right {
+    position: relative;
+    animation: fade-center-to-right 1s;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-center-to-right {
+    0% {right: 0px; top: 0px;}
+    100%   {right: -800px; top: 0px;}
+}
+
+.box-wrapper .wrapper input {
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 80%;
+    outline: 0;
+}
+
+.box-wrapper .wrapper .field{
+    font-size: 14px;
+}
+.box-wrapper .wrapper .field span{
+    width: 10%;
+}
+.box-wrapper .wrapper .field input{
+    width: 80%;
+}
+
+.box-wrapper .wrapper .field div#errorlogin,
+.box-wrapper .wrapper .field div#errorNameSignup,
+.box-wrapper .wrapper .field div#errorEmailSignup {
+    font-size: 12px;
+    color: #ff5f5f;
+}
+
+.box-wrapper .wrapper .field:nth-child(2){
+    margin-top: 10px;
+}
+
+.box-wrapper .wrapper .field button {
+    padding: 7px 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.box-wrapper .wrapper .field button:hover {
+    background: lightcyan;
+}
+
+.box-wrapper .wrapper .field-action {
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+}
+
+.box-wrapper .wrapper .field-action .signup,
+.box-wrapper .wrapper .field-action .signin {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.box-wrapper .wrapper .field-action a {
+    padding-left: 5px;
+    color: #6060d4;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .box-wrapper .wrapper .field input{
+        width: 100%;
+    }
+}
+
+::placeholder {
+    font-size: 10px;
+    color: #bdbdbd;
+}

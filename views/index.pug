@@ -1,0 +1,51 @@
+
+html
+  head
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    style
+      include style.css
+    title= title
+  body
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script
+      include script.js
+    - const isLogedin = session.active == 1 ? true : false
+
+    if !isLogedin
+      section.box-wrapper
+        .wrapper#signin-wrapper
+          .field 
+            span Email 
+            input#emailLogin(type="text" placeholder="Enter your email")
+            div#errorlogin
+            button#login
+              | login
+          .field-action
+            .signup
+              span Don't have an account?
+                a#gosignup(href="javascript:;") Sign up here
+
+        .wrapper#signup-wrapper
+          .field 
+            span Name 
+            input#nameSignup(type="text" placeholder="Enter your name")
+            div#errorNameSignup
+          .field
+            span Email 
+            input#emailSignup(type="text" placeholder="Enter your email")
+            div#errorEmailSignup
+            button#signup
+              | SignUp
+          .field-action
+            .signin
+              span Already have an account?
+                a#gosignin(href="javascript:;") Sign in here
+
+    if isLogedin
+      .wrapper
+        div
+          button#list
+            | get list
+        div
+          button#logout 
+            | Signout

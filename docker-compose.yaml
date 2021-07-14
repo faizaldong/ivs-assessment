@@ -1,0 +1,39 @@
+version: '3.8'
+
+services: 
+  mysqldb:
+    image: mysql
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_DATABASE: ivs
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ivs123
+      MYSQL_ROOT_PASSWORD: ivs123
+    ports:
+      - 4300:3306
+    expose:
+      - 4300
+    volumes: 
+      - ./dump:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+  # nodejs:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - ./:/web
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     NODE_ENV: development
+  #     PORT: 3000
+  #   links:
+  #     - mysqldb:mysqldb
+  #   depends_on:
+  #     - mysqldb
+  #   expose:
+  #     - 3000
+
+volumes: 
+  db-config:
+  db-data:
