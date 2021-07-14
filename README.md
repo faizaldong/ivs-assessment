@@ -8,6 +8,4 @@ This project was generated with [Express](https://expressjs.com/) and use databa
 - Run `npm start` to start nodejs server
 - Run `docker compose up` to pulling mysqldb , create table a table runnning up the container
 
-[faizal](https://www.linkedin.com/in/faizal-kamaruddin-170576104/)
-
-`faizal.itech92@gmail.com`
+[faizal](https://www.linkedin.com/in/faizal-kamaruddin-170576104/) `faizal.itech92@gmail.com`
