@@ -7,3 +7,6 @@ This project was generated with [Express](https://expressjs.com/) and use databa
 - Clone this repository `git clone https://github.com/faizaldong/ivs-assessment.git -b main`
 - Run `npm start` to start nodejs server
 - Run `docker compose up` to pulling mysqldb , create table a table runnning up the container
+
+`faizal`
+`faizal.itech92@gmail.com`
